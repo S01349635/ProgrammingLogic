@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Lab 2 - Coffee Order Form</title>
+</head>
+<body>
+  <h1>Coffee form</h1>
+  <p>Select your desired coffee from the specialized menu</p>
+
+  <form action="https://www.w3schools.com/action_page.php" method="get" id="coffeeOrder">
+    <label for="fname">Customer Name: </label>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="email">Email: </label>
+    <input type="email" id="email" name="email"><br>
+    <label for="coffeetype">Coffee Type:</label>
+    <select id="coffeetype" name="coffeetype" required>
+<option value="select">Select a Coffee</option>
+<option value="Cappuccino">Cappuccino</option>
+<option value="Latte">Latte</option>
+<option value="Americano">Americano</option>
+    </select>
+    <div>
+      <legend>Select a size:</legend>
+    <input type="radio" id="sSize" name="sSize" value="Small">
+    <label for="Small">Small</label>
+
+       <input type="radio" id="mSize" name="mSize" value="Medium">
+    <label for="Medium">Medium</label>
+
+       <input type="radio" id="lSize" name="lSize" value="Large">
+    <label for="Large">Large</label>
+    </div>
+    <div>
+      <legend>Extras:</legend>
+      <input type="checkbox" id="whippedCream" name="WhippedCream" value="WhippedCream">
+      <label for="whippedCream">Whipped Cream</label>
+      <input type="checkbox" id="extraShot" name="extraShot" value="extraShot">
+      <label for="extraShot">ExtraShot</label>
+      <input type="checkbox" id="almondMilk" name="almondMilk" value="almondMilk">
+      <label for="almondMilk">Almond Milk</label>
+    </div>
+    <div>
+          <label for="specialInstructions"> Special Instructions:</label><br>
+
+      <textarea id="specialInstructions" name="specialInstructions" rows="4" cols="50">Please provide any special instructions you would like our team to conduct for you!
+      </textarea>
+  </div>
+  </form>
+  <button type="submit" form="coffeeOrder" value="Submit">Submit</button>
+</body>
+</html>
