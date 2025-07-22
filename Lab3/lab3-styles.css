@@ -1,0 +1,43 @@
+/* Main page styles */
+body {
+    background-color: lightslategray;
+    font-family: "Arial", sans-serif;
+}
+/* <h1> styles */
+h1 {
+  color:whitesmoke;
+  text-align: center;
+}
+/* <p> styles */
+p {
+  color:burlywood;
+  padding: 10px;
+}
+/* unordered list styles */
+ul li {
+  color:aquamarine;
+  
+}
+/* unordered list (MARKER) styles */
+ul li::marker {
+  color:blueviolet;
+}
+/* <a> hyperlink styles */
+a {
+  color:blue;
+}
+/* <a> hyperlink (HOVER) styles */
+a:hover {
+  text-decoration: none;
+}
+/* styled-box styles */
+.styled-box {
+  background-color: lightgray;
+  border: 2px solid black;
+  padding: 15px;
+  text-align: center;
+}
+/* styled-box <p> styles */
+.styled-box p {
+  color: red;
+}
