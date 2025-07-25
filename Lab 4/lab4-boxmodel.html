@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Box Model Lab</title>
+<style>
+.box {
+  border: solid blue 5px;
+  width: 160px;
+ height: 200px;
+  color: red;
+  padding: 20px;
+margin: 20px;
+background-color: lightgray;
+}
+.box2 {
+ box-sizing: border-box;
+ width: 160px;
+ height: 200px;
+ border: solid blue 5px;
+ padding: 20px;
+ margin: 20px;
+color: red;
+background-color: burlywood;
+}
+.box3 {
+ box-sizing:content-box;
+ width: 160px;
+ height: 200px;
+ border: solid blue 5px;
+ padding: 20px;
+ margin: 20px;
+color: red;
+background-color: burlywood;
+}
+.box4 {
+ box-sizing: border-box;
+ width: 210px;
+ height: 250px;
+ border: solid blue 5px;
+ padding: 20px;
+ margin: 20px;
+color: red;
+background-color: lightgray;
+}
+.text{
+  text-align: center;
+  padding: 5px;
+}
+</style>
+</head>
+<body>
+<h1>CSS Box Model Lab</h1>
+<legend>Here is the original box with the same width and height as the one below,
+  however it does not have the box-sizing property and the result is 
+  that the padding and margin sizes add the width and height which in total makes up the total size.
+</legend>
+<p>Therefore it is larger!</p>
+<div class="box">
+  <div class="text">
+    <p>210px X 250px</p>
+  </div>
+<p>This is a demonstration of the CSS Box Model.</p>
+<p>No border-box included</p>
+</div>
+
+<legend>Here is an example of how box-sizing: border-box; reformats padding and margin
+  to accomidate for the set width & height. </legend>
+  <p>The result of this makes it so that the set width and height is the exact size that your going to get rather than
+    having to worry about accomidating for the padding and margins.
+  </p>
+<div class="box2">
+  <div class="text">
+    <p>160px X 200px</p>
+  </div>
+<p>This is a demonstration of the change in using border-box.</p>
+</div>
+<p>This is using the content-box property, as you can see it is the same size as the original, which has no set box-sizing property.
+    Why is this you ask? Well apparently it's how the default was for setting a box, however since the border-box
+    was implemented, content-box was no longer being used as much, however it is still useful if you set your elements to only use border-box and you wish
+    to revert back to the default being content-box for a specific element which will override the borderbox which in this example is set to all elements.  
+  </p>
+<div class="box3">
+  <div class="text">
+    <p>210px X 250px</p>
+    <p>This is a demonstration of the CSS Box Model.</p>
+<p>content-box included</p>
+  </div>
+  </div>
+  <legend>This box has the same dims as the original however this box has the border-box property with a size of 210px X 250px.</legend>
+
+  <div class="box4">
+  <div class="text">
+    <p>210px X 250px</p>
+  </div>
+    <p>This is a demonstration of the CSS Box Model.</p>
+<p><center>border-box included</center></p>
+  </div>
+</body>
+</html>
